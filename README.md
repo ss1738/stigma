@@ -96,6 +96,15 @@ panels, agent debate. If you have a verifier (unit tests, an oracle, human
 labels, a downstream signal), stigma turns that feedback into a persistent trust
 model instead of throwing it away after each call.
 
+## Related
+
+Part of a set of four small libraries for not trusting an unverified LLM output:
+
+- **stigma** (this repo): aggregate many models with consensus that learns which to trust
+- [disco](https://github.com/ss1738/disco): search with a verifier (an open FunSearch)
+- [groundkit](https://github.com/ss1738/groundkit): ground a model's output against a source
+- [certain](https://github.com/ss1738/certain): calibrate confidence and abstain
+
 ## License
 
 MIT © 2026 Satyawan Singh
