@@ -86,4 +86,4 @@ result = swarm.consense([
 swarm.reward("A")   # when the verifier confirms it
 ```
 
-Code, tests, and the benchmark: <REPO_URL>
+Code, tests, and the benchmark: https://github.com/ss1738/stigma

@@ -33,7 +33,7 @@ It's provider-agnostic — it only sees `(agent_id, candidate, confidence)`
 triples, so it works over any models, retrievers, classifiers, or judge panels
 where you can *sometimes* verify the outcome.
 
-Repo + benchmark: <REPO_URL>
+Repo + benchmark: https://github.com/ss1738/stigma
 
 Honest limits: at a cold start with no verifier feedback and a correlated
 majority, it can't beat majority vote — the learning is what earns the win. And
