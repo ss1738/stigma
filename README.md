@@ -20,7 +20,7 @@ result = swarm.consense([
     Signal("claude", "A", 0.7),
     Signal("groq", "B", 0.8),
 ])
-print(result.winner, result.agreement)   # -> "A" 0.61
+print(result.winner, result.agreement)   # -> "A" 0.28
 
 # When a verifier/oracle later reveals the true answer, tell the swarm:
 swarm.reward("A")   # reinforces whoever backed it; persists to disk
