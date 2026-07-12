@@ -1,6 +1,5 @@
 """Behavioural tests for the stigma consensus core."""
 
-import json
 
 import pytest
 

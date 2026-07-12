@@ -1,5 +1,9 @@
 # stigma
 
+[![CI](https://github.com/ss1738/stigma/actions/workflows/ci.yml/badge.svg)](https://github.com/ss1738/stigma/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/stigma-consensus)](https://pypi.org/project/stigma-consensus/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 **Stigmergic consensus for multi-agent / multi-model systems.** A learned,
 stateful alternative to majority vote and self-consistency: agents deposit
 weighted signals into a shared pool, a short truth-discovery loop converges on
