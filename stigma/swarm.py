@@ -38,6 +38,8 @@ class Swarm:
         abstain_margin: float = 0.05,
         pheromone: PheromoneStore | None = None,
     ) -> None:
+        if iterations < 1:
+            raise ValueError("iterations must be >= 1")
         self.iterations = iterations
         self.damping = damping
         self.abstain_margin = abstain_margin

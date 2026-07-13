@@ -63,10 +63,13 @@ def test_learned_trust_flips_a_correlated_majority():
         Signal("bad2", "D", 0.9),
         Signal("bad3", "D", 0.9),
     ]
+    # Cold start: the colluding majority wins -- this is the failure stigma fixes.
+    assert swarm.consense(signals).winner == "D"
     # Teach the swarm that good1/good2 track verified truth.
     for _ in range(25):
         swarm.consense(signals)
         swarm.reward("T")
+    # After learning, the two reliable agents flip the result.
     result = swarm.consense(signals)
     assert result.winner == "T"
 
