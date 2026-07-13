@@ -27,7 +27,7 @@ def make_round(rng: random.Random) -> tuple[list[Signal], str]:
     decoy = rng.choice([c for c in CHOICES if c != truth])
     signals: list[Signal] = []
 
-    # Two strong, independent agents (75% correct).
+    # Two strong, independent agents (pick the true answer 75% of the time, else guess).
     for name in ("good1", "good2"):
         pick = truth if rng.random() < 0.75 else rng.choice(CHOICES)
         signals.append(Signal(name, pick, 0.8))

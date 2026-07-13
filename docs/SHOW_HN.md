@@ -18,8 +18,8 @@ stigma is a small (~300 LOC, zero-dependency) Python library that does two thing
 instead:
 
 1. **Within a round** it runs a short truth-discovery loop that reweights models
-   by how well their votes cohere, anchored so a learned prior can't be
-   overridden by a colluding majority.
+   by how well their votes cohere, anchored so a *sufficiently strong* learned
+   prior is not overridden by a colluding majority.
 2. **Across rounds** it keeps *pheromone* memory: whenever a verifier reveals the
    real answer, models that backed it gain trust and everyone slowly evaporates.
    The ensemble learns who to trust, and that memory persists across processes.

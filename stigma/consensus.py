@@ -54,8 +54,9 @@ def consense(
         signals: All votes for this round.
         start_weights: Initial per-agent reliability (typically pheromone levels).
         iterations: Fixed-point sweeps. More = sharper convergence.
-        damping: Blend between the old and re-estimated agent weight each sweep,
-            in ``[0, 1]``. Lower is more stable.
+        damping: Amplitude of the per-sweep reliability adjustment applied to the
+            fixed prior, in ``[0, 1]``: 0 = no reweighting, higher = larger
+            swings. Lower is more stable.
         abstain_margin: If the top-two consensus gap is under this, abstain.
     """
     if not signals:

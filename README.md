@@ -37,16 +37,16 @@ stigma fixes this two ways:
 
 1. **Within a round**, a short fixed-point loop reweights agents by how well
    their votes cohere with the emerging consensus (truth discovery), anchored so
-   a learned prior is never overridden by a colluding majority.
+   a *sufficiently strong* learned prior is not overridden by a colluding majority.
 2. **Across rounds**, every time a verifier reveals the real answer, agents that
    backed it gain *pheromone*; everyone slowly evaporates. The swarm learns who
    to trust and that memory persists across processes.
 
 ## Benchmark: correlated error
 
-`benchmarks/bench_vs_majority.py`: 2 strong independent agents (75% correct) vs
-3 weak agents that collude on the same decoy 60% of the time, over 2,000
-verified questions (4 choices):
+`benchmarks/bench_vs_majority.py`: 2 strong independent agents (each picks the
+true answer 75% of the time) vs 3 weak agents that pick the same decoy 60% of the
+time, over 2,000 verified questions (4 choices):
 
 | Method | Accuracy |
 |---|---|

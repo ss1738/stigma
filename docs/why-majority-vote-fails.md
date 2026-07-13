@@ -49,9 +49,9 @@ No retraining, no labels beyond the verifier's yes/no, ~300 lines.
 
 ## Does it work?
 
-A deliberately adversarial benchmark: 2 strong independent agents (75% correct)
-against 3 weak agents that collude on the *same* decoy 60% of the time. 2,000
-verified questions, 4 choices.
+A deliberately adversarial benchmark: 2 strong independent agents (each picks the
+true answer 75% of the time) against 3 weak agents that pick the *same* decoy 60%
+of the time. 2,000 verified questions, 4 choices.
 
 | Method | Accuracy |
 |---|---|
